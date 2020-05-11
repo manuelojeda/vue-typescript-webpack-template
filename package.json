@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server --config ./webpack.config.js --hot"
+    "serve": "webpack-dev-server --config ./webpack.config.js --hot",
+    "preinstall": "npx npm-force-resolutions"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^5.2.3",
+    "minimist": "^1.2.5",
     "ts-loader": "^6.2.0",
     "tslint": "^5.20.0",
     "typescript": "^3.6.3",
@@ -34,9 +36,12 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "html-webpack-plugin": "^3.2.0"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
   }
 }
